@@ -41,6 +41,7 @@ class ExampleTextNode:
                 "make_uppercase": ("BOOLEAN", {
                     "default": False  # Checkbox, unchecked by default
                 }),
+                "style": (["normal", "excited", "formal"],),
             },
             # Optional inputs go here (we don't have any for this example)
             # "optional": { ... }
@@ -86,6 +87,12 @@ class ExampleTextNode:
         # Apply uppercase if requested
         if make_uppercase:
             prefix = prefix.upper()
+
+        # Apply style
+        if style == "excited":
+            text = text + "!!!"
+        elif style == "formal":
+            text = text + "."
 
         result = prefix + text
 
