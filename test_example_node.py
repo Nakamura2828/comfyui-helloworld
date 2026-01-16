@@ -121,9 +121,8 @@ def test_input_types_structure():
 def test_input_types_matches_function_signature():
     """
     Automatically verify that INPUT_TYPES keys match the actual function parameters.
-
-    This catches the exact bug you had - adding a parameter without updating INPUT_TYPES!
     """
+
     node = ExampleTextNode()
 
     # Get the INPUT_TYPES configuration
