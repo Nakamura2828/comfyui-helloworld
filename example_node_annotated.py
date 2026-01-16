@@ -67,7 +67,7 @@ class ExampleTextNode:
     # THE ACTUAL FUNCTION: This is where your logic goes
     # ========================================================================
 
-    def add_prefix(self, text, prefix, make_uppercase=False):
+    def add_prefix(self, text, prefix, make_uppercase=False, style="default"):
         """
         This method is called when the node executes.
 

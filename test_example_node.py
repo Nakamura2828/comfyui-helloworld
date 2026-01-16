@@ -41,6 +41,15 @@ def test_uppercase_prefix():
 
     print("✓ test_uppercase_prefix passed")
 
+def test_styled_prefix():
+    """Test that prefix styles work as expected"""
+    node = ExampleTextNode()
+
+    result = node.add_prefix("World", "Hello ", style="excited")
+    assert result == ("Hello World!!!",), f"Expected ('Hello World!!!,) but got {result}"
+
+    result = node.add_prefix("World", "Hello ", style="formal")
+    assert result == ("Hello World.",), f"Expected ('Hello World!!!,) but got {result}"
 
 def test_return_type():
     """Test that return value is always a tuple"""
@@ -119,9 +128,7 @@ def test_input_types_structure():
 ###############################################################################
 
 def test_input_types_matches_function_signature():
-    """
-    Automatically verify that INPUT_TYPES keys match the actual function parameters.
-    """
+    """Automatically verify that INPUT_TYPES keys match the actual function parameters."""
 
     node = ExampleTextNode()
 
