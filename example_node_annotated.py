@@ -61,7 +61,7 @@ class ExampleTextNode:
     FUNCTION = "add_prefix"
 
     # Where this node appears in the "Add Node" menu
-    CATEGORY = "tutorial/text"
+    CATEGORY = "tutorial/examples"
 
     # ========================================================================
     # THE ACTUAL FUNCTION: This is where your logic goes
